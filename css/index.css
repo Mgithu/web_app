@@ -1,0 +1,70 @@
+/*start content*/
+.content{
+	text-align: center;
+	margin: 20px auto;
+	height:100%;
+}
+
+.firsttask,.secondtask{
+	border: 1px solid gainsboro;
+	border-bottom: 0px;
+	font-family: "黑体";
+	width: 45%;
+}
+
+/*start tittle*/
+.tittle{
+	background-color: cornflowerblue;
+	color: white;
+	height: 25px;
+}
+
+.tittle span{
+	line-height: 25px;
+}
+
+.add{
+	height:25px;
+	width: 25px;
+}
+/*end tittle*/
+/*start tasklist*/
+.list{
+	border-bottom: 1px solid darkgray;
+	height:30px;
+	color: black;
+	display: block;
+	border-left: 1px solid darkgray;
+	border-right: 1px solid darkgray;
+}
+
+.list:hover{
+	background-color:#F5F5F5;
+}
+
+.bingo{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid gainsboro;
+	border-radius: 4px;
+	margin:5px 5px;
+}
+
+.taskname{
+	display: block;
+	margin: 5px 0;
+	height: 20px;
+	border: 0px;
+}
+
+.list:hover .taskname{
+	background-color:#F5F5F5;
+}
+
+.ed{
+	margin-right: 5px;
+	margin-top: 5px;
+}
+/*end tasklist*/
+/*end content*/

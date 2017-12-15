@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>login</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div style="margin: 80px 20%;">
+			<a href="login.html">登录</a>
+			<a href="register.html">注册</a>
+			<h1>登录</h1>
+			<form action="dologin.php" enctype="multipart/form-data" method="post">
+				<div class="name">
+					<label>姓名：</label>
+					<input type="text" name="username" id="username" placeholder="请输入姓名" class="form-control"/>
+				</div>
+				<div class="password" style="margin-top: 20px;margin-bottom: 20px;">
+					<label>密码：</label>
+					<input type="password" name="psw" id="psw" placeholder="请输入密码"class="form-control"/>
+				</div>
+				<button type="submit" class="btn btn-default">登录</button>
+				<p id="help_info" style="font-size: 20px;"></p>
+			</form>
+		</div>
+		
+		<script type="text/javascript" src="public.js"></script>
+	</body>
+</html>

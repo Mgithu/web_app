@@ -1,0 +1,67 @@
+/*start public*/
+body{
+	margin: 0px;
+	padding:0px;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover,a:active,a:focus{
+	text-decoration: none;
+	color: inherit;
+}
+
+.clear{
+	clear:both;
+}
+
+p{
+	margin: 0;
+}
+
+ul{
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+/*end public*/
+
+/*start head*/
+.headline{
+	height:60px;
+	background-color: cornflowerblue;
+	color: white;
+	font-size: 25px;
+	line-height: 60px;
+}
+
+.user{
+	line-height:60px;
+}
+/*end head*/
+
+/*start bottom*/
+.bottom{
+	font-size: 15px;
+	text-align: center;
+	color: white;
+	background-color: cornflowerblue;
+	padding:5px 0;
+	height: 50px;
+}
+/*end bottom*/

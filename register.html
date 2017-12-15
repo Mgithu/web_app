@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>register</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div style="margin: 80px 20%;">
+			<a href="login.html">登录</a>
+			<a href="register.html">注册</a>
+			<h1>注册</h1>
+			<form action="doregister.php" enctype="multipart/form-data" method="post">
+				<div class="name">
+					<label>姓名：</label>
+					<input type="text" name="username" id="username" placeholder="请输入姓名" class="form-control"/>
+				</div>
+				<div class="password" style="margin-top: 20px;">
+					<label>密码：</label>
+					<input type="password" name="psw_1" id="psw_1" placeholder="请6-15位输入密码" class="form-control"/>
+				</div>
+				<div class="password" style="margin-top: 20px;margin-bottom: 20px;">
+					<label>确认密码：</label>
+					<input type="password" name="psw_2" id="psw_2" placeholder="请再次输入密码"class="form-control"/>
+				</div>
+				<button type="submit" class="btn btn-default">注册</button>
+				<p id="help_info"></p>
+			</form>
+		</div>
+		
+		<script type="text/javascript" src="public.js"></script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<!--start head-->
+		<div class="container-fluid headline">
+			<div class="container">
+				<span>PlayTask</span>
+				<a href="login.html"><span class="fr glyphicon glyphicon-log-out user"></span></a>
+			</div>
+		</div>
+		<!--end head-->
+		
+		<!--start body-->
+		<div class="container content">
+			<div class="firsttask" style="margin-left:27.5%;">
+				<div class="tittle">
+					<span>一级任务</span>
+					<a href="addfir.php?id=<?php echo $_SESSION['userinfo']['id']; ?>" class="create"><img src="img/plus49.png" class="add fr"/></a>
+					<ul class="fir_list">
+						<?php for($x=0;$x<count($info_1);$x++){ ?>
+						<li class="list">
+							<a href="delfir.php?id=<?php echo $info_1[$x][0]; ?>" class="fl bingo"></a>
+							<a href="searchsec.php?id=<?php echo $info_1[$x][0]; ?>"><span><?php echo $info_1[$x][2]; ?></span></a>
+							<a href="delfir.php?id=<?php echo $info_1[$x][0]; ?>" class="fr ed">删除</a>
+							<a href="editfir.php?id=<?php echo $info_1[$x][0]; ?>" class="fr ed">编辑</a>
+						</li>
+						<?php } ?>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--end body-->
+		
+		<!--start bottom-->
+		<div class="container-fluid bottom navbar-fixed-bottom">
+			<div class="container">
+				<p>©2017 - Recipeworld - xxx</p>
+				<p>Ownership：Achan</p>
+			</div>
+		</div>
+		<!--end bottom-->
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
